@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarvis V4 Interface</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Link to the new stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    <!-- React and Babel Libraries -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin defer></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin defer></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js" crossorigin defer></script>
+    
+    <!-- Your React application script -->
+    <script type="text/babel" src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body>
+    <!-- The root element where the React app will be mounted -->
+    <div id="root"></div>
+</body>
+</html>
